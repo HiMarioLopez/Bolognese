@@ -12,16 +12,16 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nim-fawn.vercel.app/'),
+  metadataBase: new URL('https://bolognese.mariolopez.org/'),
   alternates: {
-    canonical: '/'
+    canonical: '/',
   },
   title: {
-    default: 'Nim - Personal website template',
-    template: '%s | Nim'
+    default: 'Bolognese',
+    template: '%s | Bolognese',
   },
-  description:  'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
-};
+  description: 'Bolognese is a food blog by Mario Lopez Martinez.',
+}
 
 const geist = Geist({
   variable: '--font-geist',
