@@ -1,6 +1,6 @@
-# Bolognese Blog
+# Bolognese
 
-This is a simple blog built with Next.js. Uses [this](https://github.com/ibelick/nim) Next.js blog starter.
+This is a simple food blog built with Next.js. Uses [this](https://github.com/ibelick/nim) Next.js blog starter.
 
 ## Getting Started
 
