@@ -1,5 +1,15 @@
 'use client';
 
+import useClickOutside from '@/hooks/useClickOutside';
+import { cn } from '@/lib/utils';
+import { XIcon } from 'lucide-react';
+import {
+  AnimatePresence,
+  motion,
+  MotionConfig,
+  Transition,
+  Variant,
+} from 'motion/react';
 import React, {
   useCallback,
   useContext,
@@ -9,17 +19,7 @@ import React, {
   useRef,
   useState,
 } from 'react';
-import {
-  motion,
-  AnimatePresence,
-  MotionConfig,
-  Transition,
-  Variant,
-} from 'motion/react';
 import { createPortal } from 'react-dom';
-import { cn } from '@/lib/utils';
-import { XIcon } from 'lucide-react';
-import useClickOutside from '@/hooks/useClickOutside';
 
 export type MorphingDialogContextType = {
   isOpen: boolean;
@@ -412,12 +412,12 @@ function MorphingDialogClose({
 
 export {
   MorphingDialog,
-  MorphingDialogTrigger,
+  MorphingDialogClose,
   MorphingDialogContainer,
   MorphingDialogContent,
-  MorphingDialogClose,
-  MorphingDialogTitle,
-  MorphingDialogSubtitle,
   MorphingDialogDescription,
   MorphingDialogImage,
+  MorphingDialogSubtitle,
+  MorphingDialogTitle,
+  MorphingDialogTrigger,
 };
