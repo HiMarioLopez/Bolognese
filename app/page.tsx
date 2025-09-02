@@ -192,8 +192,8 @@ export default function Personal() {
           <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
             {EMAIL}
           </a>
-          . I obsessively patrol my inbox, even the junk folder. I'm also active
-          on the social medias listed below.
+          . I obsessively patrol my inbox, even the junk folder. I&apos;m also
+          active on the social medias listed below.
         </p>
         <div className="flex items-center justify-start space-x-3">
           {SOCIAL_LINKS.map((link) => (
