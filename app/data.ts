@@ -16,21 +16,21 @@ type SocialLink = {
 };
 
 export const BLOG_POSTS: BlogPost[] = [
-  {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-1',
-    category: 'Non-Bolognese',
-  },
-  {
-    title: 'How to Export Metadata from MDX for Next.js SEO',
-    description:
-      'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
-    link: '/blog/example-mdx-metadata',
-    uid: 'blog-2',
-    category: 'Bolognese',
-  },
+  // {
+  //   title: 'Exploring the Intersection of Design, AI, and Design Engineering',
+  //   description: 'How AI is changing the way we design',
+  //   link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+  //   uid: 'blog-1',
+  //   category: 'Non-Bolognese',
+  // },
+  // {
+  //   title: 'How to Export Metadata from MDX for Next.js SEO',
+  //   description:
+  //     'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
+  //   link: '/blog/example-mdx-metadata',
+  //   uid: 'blog-2',
+  //   category: 'Bolognese',
+  // },
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [

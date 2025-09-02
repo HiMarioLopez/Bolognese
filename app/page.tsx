@@ -119,29 +119,36 @@ export default function Personal() {
               duration: 0.2,
             }}
           >
-            {BLOG_POSTS.map((post) => (
-              <Link
-                key={post.uid}
-                className="-mx-3 rounded-xl px-3 py-3"
-                href={post.link}
-                data-id={post.uid}
-              >
-                <div className="flex flex-col space-y-1">
-                  <span className="mb-1 md:hidden">
-                    <BlogCategoryPill category={post.category} />
-                  </span>
-                  <h4 className="flex items-center font-normal dark:text-zinc-100">
-                    {post.title}
-                    <span className="hidden md:inline">
+            {BLOG_POSTS.length === 0 ? (
+              <div className="-mx-3 rounded-xl px-3 py-6 text-zinc-600 dark:text-zinc-400">
+                No blog posts yet. Mario needs to go eat [some pasta] and write
+                about it.
+              </div>
+            ) : (
+              BLOG_POSTS.map((post) => (
+                <Link
+                  key={post.uid}
+                  className="-mx-3 rounded-xl px-3 py-3"
+                  href={post.link}
+                  data-id={post.uid}
+                >
+                  <div className="flex flex-col space-y-1">
+                    <span className="mb-1 md:hidden">
                       <BlogCategoryPill category={post.category} />
                     </span>
-                  </h4>
-                  <p className="text-zinc-500 dark:text-zinc-400">
-                    {post.description}
-                  </p>
-                </div>
-              </Link>
-            ))}
+                    <h4 className="flex items-center font-normal dark:text-zinc-100">
+                      {post.title}
+                      <span className="hidden md:inline">
+                        <BlogCategoryPill category={post.category} />
+                      </span>
+                    </h4>
+                    <p className="text-zinc-500 dark:text-zinc-400">
+                      {post.description}
+                    </p>
+                  </div>
+                </Link>
+              ))
+            )}
           </AnimatedBackground>
         </div>
       </motion.section>
