@@ -1,6 +1,7 @@
 'use client'
-import { TextMorph } from '@/components/ui/text-morph'
+
 import { ScrollProgress } from '@/components/ui/scroll-progress'
+import { TextMorph } from '@/components/ui/text-morph'
 import { useEffect, useState } from 'react'
 
 function CopyButton() {
@@ -42,7 +43,6 @@ export default function LayoutBlogPost({
           bounce: 0,
         }}
       />
-
       <div className="absolute top-24 right-4">
         <CopyButton />
       </div>

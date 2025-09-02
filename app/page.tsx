@@ -1,6 +1,7 @@
 'use client'
 
 import { AnimatedBackground } from '@/components/ui/animated-background'
+import { BlogCategoryPill } from '@/components/ui/blog-category-pill'
 import { Magnetic } from '@/components/ui/magnetic'
 import { motion } from 'motion/react'
 import Link from 'next/link'
@@ -126,8 +127,9 @@ export default function Personal() {
                 data-id={post.uid}
               >
                 <div className="flex flex-col space-y-1">
-                  <h4 className="font-normal dark:text-zinc-100">
+                  <h4 className="flex items-center font-normal dark:text-zinc-100">
                     {post.title}
+                    <BlogCategoryPill category={post.category} />
                   </h4>
                   <p className="text-zinc-500 dark:text-zinc-400">
                     {post.description}
