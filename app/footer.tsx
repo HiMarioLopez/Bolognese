@@ -1,9 +1,9 @@
-'use client'
+'use client';
 
-import { AnimatedBackground } from '@/components/ui/animated-background'
-import { MonitorIcon, MoonIcon, SunIcon } from 'lucide-react'
-import { useTheme } from 'next-themes'
-import { useEffect, useState } from 'react'
+import { AnimatedBackground } from '@/components/ui/animated-background';
+import { MonitorIcon, MoonIcon, SunIcon } from 'lucide-react';
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 const THEMES_OPTIONS = [
   {
@@ -21,18 +21,18 @@ const THEMES_OPTIONS = [
     id: 'system',
     icon: <MonitorIcon className="h-4 w-4" />,
   },
-]
+];
 
 function ThemeSwitch() {
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   if (!mounted) {
-    return null
+    return null;
   }
 
   return (
@@ -46,7 +46,7 @@ function ThemeSwitch() {
       }}
       enableHover={false}
       onValueChange={(id) => {
-        setTheme(id as string)
+        setTheme(id as string);
       }}
     >
       {THEMES_OPTIONS.map((theme) => {
@@ -60,10 +60,10 @@ function ThemeSwitch() {
           >
             {theme.icon}
           </button>
-        )
+        );
       })}
     </AnimatedBackground>
-  )
+  );
 }
 
 export function Footer() {
@@ -84,5 +84,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

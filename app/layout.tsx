@@ -1,15 +1,15 @@
-import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
-import './globals.css'
-import { Header } from './header'
-import { Footer } from './footer'
-import { ThemeProvider } from 'next-themes'
+import type { Metadata, Viewport } from 'next';
+import { Geist, Geist_Mono } from 'next/font/google';
+import './globals.css';
+import { Header } from './header';
+import { Footer } from './footer';
+import { ThemeProvider } from 'next-themes';
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   themeColor: '#ffffff',
-}
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://bolognese.mariolopez.org/'),
@@ -21,22 +21,22 @@ export const metadata: Metadata = {
     template: '%s | Bolognese',
   },
   description: 'Bolognese is a food blog by Mario Lopez Martinez.',
-}
+};
 
 const geist = Geist({
   variable: '--font-geist',
   subsets: ['latin'],
-})
+});
 
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
-})
+});
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -59,5 +59,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }

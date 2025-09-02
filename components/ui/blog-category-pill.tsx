@@ -1,4 +1,4 @@
-import { BLOG_CATEGORIES, BlogCategory } from '@/app/data'
+import { BLOG_CATEGORIES, BlogCategory } from '@/app/data';
 
 export function BlogCategoryPill({ category }: { category: BlogCategory }) {
   return (
@@ -11,5 +11,5 @@ export function BlogCategoryPill({ category }: { category: BlogCategory }) {
     >
       {category === BLOG_CATEGORIES[0] ? '🍝 Bolognese' : '✨ Non-Bolognese'}
     </span>
-  )
+  );
 }
