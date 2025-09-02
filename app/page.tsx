@@ -75,13 +75,22 @@ export default function Personal() {
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
             A simple recipe
-            <span
-              title="Does anyone else feel weird using em dashes in the age of AI? I swear to you I've been using them extensively since my school days—just ask my middle school teacher!"
-              aria-label="Does anyone else feel weird using em dashes in the age of AI? I swear to you I've been using them extensively since my school days—just ask my middle school teacher!"
-              className="cursor-help text-green-800 underline decoration-green-800/60 decoration-dotted underline-offset-2 transition-colors hover:text-green-900 dark:text-green-400 dark:decoration-green-400/60 dark:hover:text-green-300"
+            <button
+              type="button"
+              aria-describedby="emdash-tip"
+              className="group relative inline cursor-help text-green-800 underline decoration-green-800/60 decoration-dotted underline-offset-2 transition-colors select-text hover:text-green-900 dark:text-green-400 dark:decoration-green-400/60 dark:hover:text-green-300"
             >
               —
-            </span>
+              <span
+                role="tooltip"
+                id="emdash-tip"
+                className="pointer-events-none absolute top-full left-1/2 z-10 mt-1 hidden w-64 -translate-x-1/2 rounded bg-zinc-800 px-2 py-1 text-xs leading-snug whitespace-normal text-white shadow-lg group-hover:block group-focus:block dark:bg-zinc-200 dark:text-zinc-900"
+              >
+                Does anyone else feel weird using em dashes in the age of AI? I
+                swear to you I've been using them extensively since my school
+                days—just ask my high school teacher!
+              </span>
+            </button>
             ground red meats (usually a blend of one or more: beef, pork, or
             veal), tomatoes, some spices. Maybe we get fancy with the{' '}
             <a
