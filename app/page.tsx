@@ -6,7 +6,6 @@ import { Magnetic } from '@/components/ui/magnetic';
 import { motion } from 'motion/react';
 import Link from 'next/link';
 import { BLOG_POSTS, EMAIL, SOCIAL_LINKS } from './data';
-import { useEffect, useState } from 'react';
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -62,15 +61,6 @@ function MagneticSocialLink({
 }
 
 export default function Personal() {
-  const [isTooltipOpen, setIsTooltipOpen] = useState(false);
-  const [isTouchDevice, setIsTouchDevice] = useState(false);
-
-  useEffect(() => {
-    // Detect touch devices once on mount
-    const hasTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    setIsTouchDevice(hasTouch);
-  }, []);
-
   return (
     <motion.main
       className="space-y-12"
@@ -84,29 +74,9 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            A simple recipe
-            <button
-              type="button"
-              aria-describedby="emdash-tip"
-              aria-expanded={isTooltipOpen} // Accessibility: Announces open state
-              onMouseEnter={() => !isTouchDevice && setIsTooltipOpen(true)} // Hover show (disabled on touch)
-              onMouseLeave={() => !isTouchDevice && setIsTooltipOpen(false)} // Hover hide
-              onClick={() => setIsTooltipOpen((prev) => !prev)} // Toggle on click/tap
-              className="group relative inline cursor-help text-green-800 underline decoration-green-800/60 decoration-dotted underline-offset-2 transition-colors select-text hover:text-green-900 dark:text-green-400 dark:decoration-green-400/60 dark:hover:text-green-300"
-            >
-              —
-              <span
-                role="tooltip"
-                id="emdash-tip"
-                className={`pointer-events-none absolute top-full left-1/2 z-10 mt-1 w-64 -translate-x-1/2 rounded bg-zinc-800 px-2 py-1 text-xs leading-snug whitespace-normal text-white shadow-lg dark:bg-zinc-200 dark:text-zinc-900 ${isTooltipOpen ? 'block' : 'hidden'}`} // Toggle visibility via state
-              >
-                Does anyone else feel weird using em dashes in the age of AI? I
-                swear to you I&apos;ve been using them extensively since my
-                school days—just ask my high school teacher!
-              </span>
-            </button>
-            ground red meats (usually a blend of one or more: beef, pork, or
-            veal), tomatoes, some spices. Maybe we get fancy with the{' '}
+            A simple recipe—ground red meats (usually a blend of one or more:
+            beef, pork, or veal), tomatoes, some spices. Maybe we get fancy with
+            the{' '}
             <a
               href="https://en.wikipedia.org/wiki/Mirepoix"
               target="_blank"
