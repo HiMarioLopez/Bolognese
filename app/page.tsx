@@ -91,6 +91,7 @@ export default function Personal() {
               aria-expanded={isTooltipOpen} // Accessibility: Announces open state
               onMouseEnter={() => !isTouchDevice && setIsTooltipOpen(true)} // Hover show (disabled on touch)
               onMouseLeave={() => !isTouchDevice && setIsTooltipOpen(false)} // Hover hide
+              onClick={() => setIsTooltipOpen((prev) => !prev)} // Toggle on click/tap
               className="group relative inline cursor-help text-green-800 underline decoration-green-800/60 decoration-dotted underline-offset-2 transition-colors select-text hover:text-green-900 dark:text-green-400 dark:decoration-green-400/60 dark:hover:text-green-300"
             >
               —
