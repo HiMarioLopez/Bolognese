@@ -74,8 +74,16 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            A simple recipe - ground beef, tomatoes, some spices. Maybe we get
-            fancy with the{' '}
+            A simple recipe
+            <span
+              title="Does anyone else feel weird using em dashes in the age of AI? I swear to you I've been using them extensively since my school days—just ask my middle school teacher!"
+              aria-label="Does anyone else feel weird using em dashes in the age of AI? I swear to you I've been using them extensively since my school days—just ask my middle school teacher!"
+              className="cursor-help text-green-800 underline decoration-green-800/60 decoration-dotted underline-offset-2 transition-colors hover:text-green-900 dark:text-green-400 dark:decoration-green-400/60 dark:hover:text-green-300"
+            >
+              —
+            </span>
+            ground red meats (usually a blend of one or more: beef, pork, or
+            veal), tomatoes, some spices. Maybe we get fancy with the{' '}
             <a
               href="https://en.wikipedia.org/wiki/Mirepoix"
               target="_blank"
@@ -84,8 +92,12 @@ export default function Personal() {
             >
               mirepoix
             </a>
-            . It&apos;s not even my favorite food, but it&apos;s good enough to
-            write about and document, just like most things in life.
+            . People I care for deeply know about my admiration for a great
+            sauce—salsa, pesto, aioli, ... (the list goes on). Bolognese is not
+            even my favorite sauce, but it&apos;s good enough to write about and
+            document, just like most things in life. I also happen to be
+            yearning for it this week—the week I decided to bring this blog to
+            life.
           </p>
           <br />
           <p className="text-zinc-600 dark:text-zinc-400">
@@ -98,9 +110,26 @@ export default function Personal() {
             >
               my
             </a>{' '}
-            food blog. There a very high probability that you&apos;ll find more
-            than just Pasta Bolognese on this corner of the web.
+            blog. There is a very high probability that we&apos;ll find more
+            than just scribbles about Bolognese on this corner of the web. Maybe
+            we&apos;ll produce some content that barely relates to food. Also, a
+            fun fact: Italians don&apos;t even call it Bolognese; they simply
+            refer to it as{' '}
+            <a
+              href="https://en.wikipedia.org/wiki/Ragù"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-indigo-600 underline decoration-dotted underline-offset-4 transition-colors duration-200 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
+            >
+              ragù
+            </a>
+            .
           </p>
+          <br />
+          <blockquote className="border-l-2 border-zinc-200 pl-4 text-zinc-600 italic dark:border-zinc-800 dark:text-zinc-500">
+            “Bone Apple Tea”
+            <span className="not-italic"> — Unknown</span>
+          </blockquote>
         </div>
       </motion.section>
 
@@ -108,7 +137,7 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-3 text-lg font-medium">Blog</h3>
+        <h3 className="mb-3 text-lg font-medium">Recent Posts</h3>
         <div className="flex flex-col space-y-0">
           <AnimatedBackground
             enableHover
@@ -120,8 +149,8 @@ export default function Personal() {
             }}
           >
             {BLOG_POSTS.length === 0 ? (
-              <div className="-mx-3 rounded-xl px-3 py-6 text-zinc-600 dark:text-zinc-400">
-                No blog posts yet. Mario needs to go eat [some pasta] and write
+              <div className="-mx-3 px-3 py-6 text-zinc-600 dark:text-zinc-400">
+                No blog posts yet. Mario needs to go eat some pasta and write
                 about it.
               </div>
             ) : (
@@ -163,8 +192,8 @@ export default function Personal() {
           <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
             {EMAIL}
           </a>
-          . I obsessively read each and every email that hits my inbox, even
-          spam.
+          . I obsessively patrol my inbox, even the junk folder. I'm also active
+          on the social medias listed below.
         </p>
         <div className="flex items-center justify-start space-x-3">
           {SOCIAL_LINKS.map((link) => (

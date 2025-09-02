@@ -1,23 +1,14 @@
 'use client';
-import { TextEffect } from '@/components/ui/text-effect';
+
 import Link from 'next/link';
 
 export function Header() {
   return (
-    <header className="mb-8 flex items-center justify-between">
+    <header className="mb-8 flex items-center justify-between text-2xl">
       <div>
         <Link href="/" className="font-medium text-black dark:text-white">
           Bolognese 🍝
         </Link>
-        <TextEffect
-          as="p"
-          preset="fade"
-          per="char"
-          className="text-zinc-600 dark:text-zinc-500"
-          delay={0.5}
-        >
-          &quot;Bone Apple Tea&quot; - Unknown
-        </TextEffect>
       </div>
     </header>
   );
