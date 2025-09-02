@@ -7,7 +7,8 @@ export function Header() {
     <header className="mb-8 flex items-center justify-between text-2xl">
       <div>
         <Link href="/" className="font-medium text-black dark:text-white">
-          Bolognese 🍝
+          <span className="text-rose-400 dark:text-rose-300">B</span>o
+          <span className="text-rose-400 dark:text-rose-300">log</span>nese 🍝
         </Link>
       </div>
     </header>
