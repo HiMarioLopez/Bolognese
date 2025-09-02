@@ -8,7 +8,11 @@ import { ThemeProvider } from 'next-themes';
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#ffffff',
+  // Provide theme color for both light and dark to color the browser UI/overscroll on iOS
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#09090b' }, // zinc-950
+  ],
 };
 
 export const metadata: Metadata = {
