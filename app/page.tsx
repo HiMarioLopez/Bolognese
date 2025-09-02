@@ -127,9 +127,14 @@ export default function Personal() {
                 data-id={post.uid}
               >
                 <div className="flex flex-col space-y-1">
+                  <span className="mb-1 md:hidden">
+                    <BlogCategoryPill category={post.category} />
+                  </span>
                   <h4 className="flex items-center font-normal dark:text-zinc-100">
                     {post.title}
-                    <BlogCategoryPill category={post.category} />
+                    <span className="hidden md:inline">
+                      <BlogCategoryPill category={post.category} />
+                    </span>
                   </h4>
                   <p className="text-zinc-500 dark:text-zinc-400">
                     {post.description}
