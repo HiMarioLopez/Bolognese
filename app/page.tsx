@@ -85,7 +85,11 @@ export default function Personal() {
             >
               mirepoix
             </a>
-            . People I care for deeply know about my admiration for a great
+            .
+          </p>
+          <br />
+          <p className="text-zinc-600 dark:text-zinc-400">
+            People I care for deeply know about my admiration for a great
             sauce—salsa, pesto, aioli, ... (the list goes on). Bolognese is not
             even my favorite sauce, but it&apos;s good enough to write about and
             document, just like most things in life. I also happen to be
@@ -94,7 +98,7 @@ export default function Personal() {
           </p>
           <br />
           <p className="text-zinc-600 dark:text-zinc-400">
-            This is{' '}
+            So, howdy hey and welcome. This is{' '}
             <a
               href="https://mariolopez.org"
               target="_blank"
@@ -105,9 +109,9 @@ export default function Personal() {
             </a>{' '}
             blog. There is a very high probability that we&apos;ll find more
             than just scribbles about Bolognese on this corner of the web. Maybe
-            we&apos;ll produce some content that barely relates to food. Also, a
-            fun fact: Italians don&apos;t even call it Bolognese; they simply
-            refer to it as{' '}
+            we&apos;ll produce some content that barely relates to food at all.
+            Also, a fun fact: Italians don&apos;t even call it Bolognese; they
+            simply refer to it as{' '}
             <a
               href="https://en.wikipedia.org/wiki/Ragù"
               target="_blank"

@@ -75,8 +75,9 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="text-xs text-zinc-500">
-            © 2025 Mario Lopez Martinez.
+          <span className="text-xs text-zinc-500">© 2025</span>{' '}
+          <span className="text-xs text-emerald-600 dark:text-emerald-500">
+            Mario Lopez Martinez
           </span>
         </a>
         <div className="text-xs text-zinc-400">
