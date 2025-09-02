@@ -27,20 +27,12 @@ export const BLOG_POSTS: BlogPost[] = [
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    label: 'Github',
-    link: 'https://github.com/HiMarioLopez',
+    label: 'Instagram',
+    link: 'https://www.instagram.com/HiMarioLopez',
   },
   {
     label: 'Twitter',
     link: 'https://twitter.com/HiMarioLopez',
-  },
-  {
-    label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/HiMarioLopez',
-  },
-  {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/HiMarioLopez',
   },
 ]
 

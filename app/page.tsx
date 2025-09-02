@@ -4,11 +4,7 @@ import { AnimatedBackground } from '@/components/ui/animated-background'
 import { Magnetic } from '@/components/ui/magnetic'
 import { motion } from 'motion/react'
 import Link from 'next/link'
-import {
-  BLOG_POSTS,
-  EMAIL,
-  SOCIAL_LINKS,
-} from './data'
+import { BLOG_POSTS, EMAIL, SOCIAL_LINKS } from './data'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -77,16 +73,23 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            A simple recipe - ground beef, tomatoes, some spices. Maybe we get fancy with the{' '}
+            A simple recipe - ground beef, tomatoes, some spices. Maybe we get
+            fancy with the{' '}
             <a
               href="https://en.wikipedia.org/wiki/Mirepoix"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-indigo-600 underline decoration-dotted underline-offset-4 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300 transition-colors duration-200"
+              className="font-semibold text-indigo-600 underline decoration-dotted underline-offset-4 transition-colors duration-200 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
             >
               mirepoix
             </a>
-            . It's not even my favorite food, but it's good enough to write about and document, just like most things in life.
+            . It's not even my favorite food, but it's good enough to write
+            about and document, just like most things in life.
+          </p>
+          <br />
+          <p className="text-zinc-600 dark:text-zinc-400">
+            There a very high probability that you'll find more than just Pasta
+            Bolognese on this page.
           </p>
         </div>
       </motion.section>
