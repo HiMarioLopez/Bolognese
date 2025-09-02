@@ -1,6 +1,6 @@
-'use client'
-import { TextEffect } from '@/components/ui/text-effect'
-import Link from 'next/link'
+'use client';
+import { TextEffect } from '@/components/ui/text-effect';
+import Link from 'next/link';
 
 export function Header() {
   return (
@@ -16,9 +16,9 @@ export function Header() {
           className="text-zinc-600 dark:text-zinc-500"
           delay={0.5}
         >
-          "Bone Apple Tea" - Unknown
+          &quot;Bone Apple Tea&quot; - Unknown
         </TextEffect>
       </div>
     </header>
-  )
+  );
 }

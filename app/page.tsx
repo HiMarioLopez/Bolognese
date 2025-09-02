@@ -1,11 +1,11 @@
-'use client'
+'use client';
 
-import { AnimatedBackground } from '@/components/ui/animated-background'
-import { BlogCategoryPill } from '@/components/ui/blog-category-pill'
-import { Magnetic } from '@/components/ui/magnetic'
-import { motion } from 'motion/react'
-import Link from 'next/link'
-import { BLOG_POSTS, EMAIL, SOCIAL_LINKS } from './data'
+import { AnimatedBackground } from '@/components/ui/animated-background';
+import { BlogCategoryPill } from '@/components/ui/blog-category-pill';
+import { Magnetic } from '@/components/ui/magnetic';
+import { motion } from 'motion/react';
+import Link from 'next/link';
+import { BLOG_POSTS, EMAIL, SOCIAL_LINKS } from './data';
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -15,23 +15,23 @@ const VARIANTS_CONTAINER = {
       staggerChildren: 0.15,
     },
   },
-}
+};
 
 const VARIANTS_SECTION = {
   hidden: { opacity: 0, y: 20, filter: 'blur(8px)' },
   visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
-}
+};
 
 const TRANSITION_SECTION = {
   duration: 0.3,
-}
+};
 
 function MagneticSocialLink({
   children,
   link,
 }: {
-  children: React.ReactNode
-  link: string
+  children: React.ReactNode;
+  link: string;
 }) {
   return (
     <Magnetic springOptions={{ bounce: 0 }} intensity={0.3}>
@@ -57,7 +57,7 @@ function MagneticSocialLink({
         </svg>
       </a>
     </Magnetic>
-  )
+  );
 }
 
 export default function Personal() {
@@ -84,8 +84,8 @@ export default function Personal() {
             >
               mirepoix
             </a>
-            . It's not even my favorite food, but it's good enough to write
-            about and document, just like most things in life.
+            . It&apos;s not even my favorite food, but it&apos;s good enough to
+            write about and document, just like most things in life.
           </p>
           <br />
           <p className="text-zinc-600 dark:text-zinc-400">
@@ -98,8 +98,8 @@ export default function Personal() {
             >
               my
             </a>{' '}
-            food blog. There a very high probability that you'll find more than
-            just Pasta Bolognese on this corner of the web.
+            food blog. There a very high probability that you&apos;ll find more
+            than just Pasta Bolognese on this corner of the web.
           </p>
         </div>
       </motion.section>
@@ -163,5 +163,5 @@ export default function Personal() {
         </div>
       </motion.section>
     </motion.main>
-  )
+  );
 }

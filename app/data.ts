@@ -1,19 +1,19 @@
 export const BLOG_CATEGORIES = ['Bolognese', 'Non-Bolognese'] as const;
 
-export type BlogCategory = typeof BLOG_CATEGORIES[number];
+export type BlogCategory = (typeof BLOG_CATEGORIES)[number];
 
 type BlogPost = {
-  title: string
-  description: string
-  link: string
-  uid: string
-  category: BlogCategory
-}
+  title: string;
+  description: string;
+  link: string;
+  uid: string;
+  category: BlogCategory;
+};
 
 type SocialLink = {
-  label: string
-  link: string
-}
+  label: string;
+  link: string;
+};
 
 export const BLOG_POSTS: BlogPost[] = [
   {
@@ -25,12 +25,13 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     title: 'How to Export Metadata from MDX for Next.js SEO',
-    description: 'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
+    description:
+      'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
     link: '/blog/example-mdx-metadata',
     uid: 'blog-2',
     category: 'Bolognese',
   },
-]
+];
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
@@ -41,6 +42,6 @@ export const SOCIAL_LINKS: SocialLink[] = [
     label: 'Twitter',
     link: 'https://twitter.com/HiMarioLopez',
   },
-]
+];
 
-export const EMAIL = 'howdy@bolognese.blog'
+export const EMAIL = 'howdy@bolognese.blog';
