@@ -134,7 +134,7 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-3 text-lg font-medium">Recent Posts</h3>
+        <h3 className="mb-3 text-lg font-medium">Posts</h3>
         <div className="flex flex-col space-y-0">
           <AnimatedBackground
             enableHover
@@ -183,7 +183,7 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Inquire</h3>
+        <h3 className="mb-5 text-lg font-medium">Inquiries</h3>
         <p className="mb-5 text-zinc-600 dark:text-zinc-400">
           Feel free to contact me at{' '}
           <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
