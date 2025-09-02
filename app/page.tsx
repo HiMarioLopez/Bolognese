@@ -88,8 +88,17 @@ export default function Personal() {
           </p>
           <br />
           <p className="text-zinc-600 dark:text-zinc-400">
-            There a very high probability that you'll find more than just Pasta
-            Bolognese on this page.
+            This is{' '}
+            <a
+              href="https://mariolopez.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-indigo-600 underline decoration-dotted underline-offset-4 transition-colors duration-200 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
+            >
+              my
+            </a>{' '}
+            food blog. There a very high probability that you'll find more than
+            just Pasta Bolognese on this corner of the web.
           </p>
         </div>
       </motion.section>
@@ -140,6 +149,8 @@ export default function Personal() {
           <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
             {EMAIL}
           </a>
+          . I obsessively read each and every email that hits my inbox, even
+          spam.
         </p>
         <div className="flex items-center justify-start space-x-3">
           {SOCIAL_LINKS.map((link) => (
