@@ -84,11 +84,12 @@ export default function Personal() {
               <span
                 role="tooltip"
                 id="emdash-tip"
-                className="pointer-events-none absolute top-full left-1/2 z-10 mt-1 hidden w-64 -translate-x-1/2 rounded bg-zinc-800 px-2 py-1 text-xs leading-snug whitespace-normal text-white shadow-lg group-hover:block group-focus:block dark:bg-zinc-200 dark:text-zinc-900"
+                className="pointer-events-none absolute top-full left-1/2 z-10 mt-1 hidden w-64 -translate-x-1/2 rounded bg-zinc-800 px-2 py-1 text-xs leading-snug whitespace-normal text-white shadow-lg group-hover:block group-focus:block group-active:block dark:bg-zinc-200 dark:text-zinc-900"
               >
-                Does anyone else feel weird using em dashes in the age of AI? I
-                swear to you I&apos;ve been using them extensively since my
-                school days—just ask my high school teacher!
+                Does anyone else feel weird using em dashes in the age of
+                generative AI? I swear to you, I&apos;ve been using them
+                extensively since I started writing essays—just ask my high
+                school teachers!
               </span>
             </button>
             ground red meats (usually a blend of one or more: beef, pork, or
